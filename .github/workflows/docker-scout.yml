@@ -1,1 +1,8 @@
-
+name: Docker Scout Integration
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
