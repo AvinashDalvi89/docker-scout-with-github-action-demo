@@ -1,5 +1,1 @@
-services:
-  jenkins:
-    image: jenkins/jenkins:lts
-    ports:
-      - 8080:8080
+FROM wordpress:tag
