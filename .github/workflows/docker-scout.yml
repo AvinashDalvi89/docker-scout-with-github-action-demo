@@ -40,6 +40,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           labels: |
             org.opencontainers.image.revision=${{ env.SHA }}
+            com.docker.image.source.entrypoint=${{ env.DOCKERFILE_PATH }}
           tags: |
             type=edge,branch=$repo.default_branch
             type=semver,pattern=v{{version}}
